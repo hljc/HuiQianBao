@@ -9,7 +9,7 @@
 # 如果你想要某个包路径在maindex中，则使用 -keep 选项，即使他已经在分包的路径中.
 -keep  com.lzy.okgo.**
 -keep  com.android.tools.fd.runtime.AppInfo.class
--keep  com.ceq.**
+-keep  com.ceq.**        
 -keep  com.mob.tools.utils.ResHelper.class
 -keep  com.zhy.autolayout.config.AutoLayoutConifg.class
 -keep  com.blankj.utilcode.utils.Utils.class
