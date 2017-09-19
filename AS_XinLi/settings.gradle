@@ -1,0 +1,16 @@
+include ':app_core', ':app_mob', ':app_mob_sms', ':app_banner', ':app_qq_picker', ':app_bga_qrcode', ':app_card', ':app_keyboard', ':app_mob_share', ':app_jg_push', ':app_photo', ':app_mq_customer', ':app_xinli_onekey'
+project(':app_mob').projectDir = new File('../AS_Libs/app_mob')
+project(':app_mob_sms').projectDir = new File('../AS_Libs/app_mob_sms')
+project(':app_banner').projectDir = new File('../AS_Libs/app_banner')
+project(':app_qq_picker').projectDir = new File('../AS_Libs/app_qq_picker')
+project(':app_bga_qrcode').projectDir = new File('../AS_Libs/app_bga_qrcode')
+project(':app_card').projectDir = new File('../AS_Libs/app_card')
+project(':app_keyboard').projectDir = new File('../AS_Libs/app_keyboard')
+project(':app_mob_share').projectDir = new File('../AS_Libs/app_mob_share')
+project(':app_photo').projectDir = new File('../AS_Libs/app_photo')
+project(':app_jg_push').projectDir = new File('../AS_Libs/app_jg_push')
+project(':app_mq_customer').projectDir = new File('../AS_Libs/app_mq_customer')
+project(':app_core').projectDir = new File('../AS_Libs/app_core')
+project(':app_xinli_onekey').projectDir = new File('../AS_Libs/app_xinli_onekey')
+include ':AS_HuiQianBao'
+
