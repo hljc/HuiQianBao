@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="350px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/item_background"
+        android:gravity="center_vertical"
+        android:layout_marginTop="1px"
+        android:layout_marginBottom="10px"
+        android:orientation="horizontal"
+        android:padding="20px">
+
+        <ImageView
+            android:id="@+id/iv_notice"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_xiaoxi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:textColor="@color/primaryColorOff"
+            android:textSize="45px" />
+
+        <com.gongwen.marqueen.MarqueeView
+            android:id="@+id/mv_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:marqueeAnimDuration="2000"
+            app:marqueeAnimIn="@anim/bottom_in"
+            app:marqueeAnimOut="@anim/top_out"
+            app:marqueeInterval="5000" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_background" />
+
+</com.zhy.autolayout.AutoLinearLayout>

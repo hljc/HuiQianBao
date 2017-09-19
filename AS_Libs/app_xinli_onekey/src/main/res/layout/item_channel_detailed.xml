@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1px"
+    android:background="@color/item_background"
+    android:gravity="center_vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_img"
+                android:layout_width="110px"
+                android:layout_height="110px"
+                android:layout_gravity="center">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_img"
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    app:actualImageScaleType="fitCenter"
+                    app:fadeDuration="0"
+                    app:placeholderImage="@mipmap/app_default_head"
+                    app:placeholderImageScaleType="fitCenter"
+                    app:roundAsCircle="false"
+                    app:roundedCornerRadius="0dp" />
+
+                <View
+                    android:id="@+id/v_mark"
+                    android:layout_width="40px"
+                    android:layout_height="40px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="大额"
+                android:textColor="@color/text_color_3"
+                android:textSize="50px"
+                android:textStyle="bold" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px">
+
+            <TextView
+                android:id="@+id/tv_limitSingle"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color_3"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/tv_settlement"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color_3"
+                android:textSize="35px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px">
+
+            <TextView
+                android:id="@+id/tv_limitToday"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color_3"
+                android:textSize="35px" />
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/btn_press1_off"
+                android:textSize="35px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_forward"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_margin="15px"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/app_arrow_right" />
+</com.zhy.autolayout.AutoLinearLayout>

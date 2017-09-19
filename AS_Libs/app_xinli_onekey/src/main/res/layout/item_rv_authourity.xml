@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <com.zhy.autolayout.AutoLinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <com.daimajia.swipe.SwipeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_1"
+            app:clickToClose="true">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_default"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/primaryColorOff"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:src="@mipmap/icon_default" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="设置默认"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="14dp" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_delete"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:background="#f00"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:src="@mipmap/icon_del" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="删除"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="14dp" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/sdv_img"
+                    android:layout_width="250px"
+                    android:layout_height="150px"
+                    android:layout_marginRight="30px"
+                    android:scaleType="fitCenter"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="300"
+                    fresco:failureImage="@mipmap/app_logo"
+                    fresco:placeholderImage="@mipmap/app_logo"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false"
+                    fresco:roundedCornerRadius="0dp" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_bankCarCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="50px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_bankCardType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="储蓄卡"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/tv_bankCardNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30px"
+                        android:gravity="bottom"
+                        android:text=""
+                        android:textColor="@color/text_color_3"
+                        android:textSize="45px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_bankType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20px"
+                    android:text="充值卡"
+                    android:textColor="@color/primaryColorOff"
+                    android:textSize="45px"
+                    android:textStyle="bold" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.daimajia.swipe.SwipeLayout></com.zhy.autolayout.AutoLinearLayout>
+</android.support.v7.widget.CardView>

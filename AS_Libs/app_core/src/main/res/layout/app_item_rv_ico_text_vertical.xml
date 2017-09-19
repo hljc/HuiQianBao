@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/v_rightSplit"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/rl_img"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_img"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/app_default_head"
+                fresco:roundAsCircle="false"
+                fresco:roundedCornerRadius="0dp" />
+
+            <View
+                android:id="@+id/v_mark"
+                android:layout_width="40px"
+                android:visibility="gone"
+                android:layout_height="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/text_color_4"
+            android:textSize="40px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/text_color_4"
+            android:textSize="40px"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/v_split"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10px"
+            android:visibility="gone" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:id="@+id/v_bottomSplit"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ll_bg" />
+
+    <View
+        android:id="@+id/v_rightSplit"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/ll_bg"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ll_bg" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f15264"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20px">
+
+        <ImageView
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/app_logo" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_1"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_1"
+                android:textSize="45px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="1000px"
+        android:layout_height="1170px"
+        fresco:layout_auto_basewidth="height">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1040px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/bg_scan_code_circle_skjf"
+            fresco:layout_auto_basewidth="height" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="560px"
+            android:layout_height="870px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fresco:layout_auto_basewidth="height">
+
+            <ImageView
+                android:layout_width="560px"
+                android:layout_height="870px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/bg_scan_code_mobile_skjf"
+                fresco:layout_auto_basewidth="height" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="380px"
+                android:layout_height="380px"
+                android:layout_centerInParent="true"
+                fresco:layout_auto_basewidth="height">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_qrcode"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/app_dialog_white_corner"
+                    android:padding="20px"
+                    android:scaleType="fitCenter"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="0"
+                    fresco:failureImageScaleType="fitCenter"
+                    fresco:layout_auto_basewidth="height"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:progressBarAutoRotateInterval="5000"
+                    fresco:progressBarImage="@mipmap/sdv_load"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false" />
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/app_dialog_white_corner"
+                    android:padding="10px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/app_logo"
+                    fresco:layout_auto_basewidth="height" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <ImageView
+            android:layout_width="700px"
+            android:layout_height="700px"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/bg_scan_code_card_skjf"
+            fresco:layout_auto_basewidth="height" />
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color_1"
+            android:textSize="80px"
+            android:textStyle="bold" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_remind"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="20px"
+        android:text="全能收款APP，随时随地收款无忧，无卡支付0.38%，秒到账，自用省钱，代理赚钱"
+        android:textColor="@color/text_color_1"
+        android:textSize="45px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_corner_button4"
+            android:gravity="center"
+            android:paddingBottom="30px"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:paddingTop="30px">
+
+            <ImageView
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_share_phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="存至手机"
+                android:textColor="@color/text_color_1"
+                android:textSize="55px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:background="@drawable/app_bg_corner_button2"
+            android:gravity="center"
+            android:paddingBottom="30px"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:paddingTop="30px">
+
+            <ImageView
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_share_share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="一键分享"
+                android:textColor="@color/text_color_1"
+                android:textSize="55px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="166px"
+        android:background="#fff"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/bg_scan_code_bottom_skjf"
+        fresco:layout_auto_basewidth="height" />
+</com.zhy.autolayout.AutoLinearLayout>

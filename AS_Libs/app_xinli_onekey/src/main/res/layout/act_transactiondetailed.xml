@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:background="@color/item_background"
+        android:orientation="horizontal"
+        android:paddingBottom="50px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px"
+        android:paddingTop="50px">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="支付金额"
+            android:textColor="@color/text_color_4"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥0.00"
+            android:textColor="@color/text_color_4"
+            android:textSize="50px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/bg_dashed" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_detailed"
+        android:background="#fafafa"
+        android:paddingBottom="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</com.zhy.autolayout.AutoLinearLayout>

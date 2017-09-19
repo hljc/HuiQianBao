@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:layout_marginTop="10px"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_background"
+            android:padding="30px">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_merchant_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:text="商家信息"
+                android:textColor="@color/text_color_4"
+                android:textSize="50px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/item_background"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px"
+                    android:text="商铺名称"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="45px" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_merchantName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/item_background"
+                        android:hint="请输入商铺名称"
+                        android:lines="1"
+                        android:maxLength="18"
+                        android:textColor="@color/text_color_3"
+                        android:textColorHint="@color/text_color_2"
+                        android:textSize="45px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#eee" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/all_managementForm"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px"
+                    android:text="经营形式"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="45px" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_managementForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:hint="请选择经营形式"
+                        android:textColor="@color/text_color_3"
+                        android:textColorHint="@color/text_color_2"
+                        android:textSize="45px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#eee" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:paddingBottom="30px"
+                    android:paddingTop="30px"
+                    android:text="所在城市"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="45px" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:hint="请选择所在城市"
+                        android:textColor="@color/text_color_3"
+                        android:textColorHint="@color/text_color_2"
+                        android:textSize="45px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#eee" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background"
+                android:padding="30px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:text="具体地址"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="45px" />
+
+                <EditText
+                    android:id="@+id/et_merchantAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/item_background"
+                    android:hint="请填写详细商户地址"
+                    android:maxLength="50"
+                    android:maxLines="3"
+                    android:textColor="@color/text_color_3"
+                    android:textColorHint="@color/text_color_2"
+                    android:textSize="45px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_uploadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_1"
+        android:padding="30px"
+        android:text="上传照片(注意:不同经营形式上传的照片不同)"
+        android:textColor="@color/text_color_3"
+        android:textSize="45px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="horizontal"
+            android:paddingBottom="10px">
+
+            <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sdv_certification1"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/getigongshanghu1"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sdv_certification2"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/getigongshanghu2"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sdv_certification3"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/getigongshanghu3"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sdv_certification4"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/getigongshanghu4"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="false" />
+
+            <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sdv_certification5"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/getigongshanghu5"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="false" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <!-- <com.zhy.autolayout.AutoLinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="200px"
+             android:orientation="horizontal"
+             android:paddingBottom="30px">
+
+             <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                 android:id="@+id/sdv_certification4"
+                 android:layout_width="0px"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:scaleType="fitCenter"
+                 android:visibility="gone"
+                 fresco:actualImageScaleType="fitCenter"
+                 fresco:placeholderImage="@mipmap/icon_merchant_zhizhao"
+                 fresco:placeholderImageScaleType="fitCenter"
+                 fresco:roundAsCircle="false"
+                 />
+
+             <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                 android:id="@+id/sdv_certification5"
+                 android:layout_width="0px"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="50px"
+                 android:layout_marginRight="50px"
+                 android:layout_weight="1"
+                 android:scaleType="fitCenter"
+                 android:visibility="gone"
+                 fresco:actualImageScaleType="fitCenter"
+                 fresco:placeholderImage="@mipmap/icon_merchant_mentou"
+                 fresco:placeholderImageScaleType="fitCenter"
+                 fresco:roundAsCircle="false"
+                 />
+
+             <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                 android:id="@+id/sdv_certification6"
+                 android:layout_width="0px"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:scaleType="fitCenter"
+                 android:visibility="gone"
+                 fresco:actualImageScaleType="fitCenter"
+                 fresco:placeholderImage="@mipmap/icon_merchant_mentou"
+                 fresco:placeholderImageScaleType="fitCenter"
+                 fresco:roundAsCircle="false"
+                 />
+         </com.zhy.autolayout.AutoLinearLayout>-->
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/all_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:background="@color/item_background"
+            android:padding="30px">
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_integral_spec" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:text="须知"
+                android:textColor="@color/text_color_4"
+                android:textSize="50px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/item_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="30px">
+
+            <TextView
+                android:id="@+id/tv_remind1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:text="1.营业执照(原件或复印件加盖公章)"
+                android:textColor="@color/text_color_3"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_remind2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:text="2.税务登记证(原件或复印件加盖公章)"
+                android:textColor="@color/text_color_3"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_remind3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:text="3.组织机构代码证(原件或复印件加盖公章)"
+                android:textColor="@color/text_color_3"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_remind4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:text="4.法人身份证(原件或复印件加盖公章)"
+                android:textColor="@color/text_color_3"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_remind5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:text="5.可授权第三方收款(授权书盖章扫描件)"
+                android:textColor="@color/text_color_3"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_background"
+        android:paddingBottom="30px"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <include
+            android:id="@+id/icd_commit"
+            layout="@layout/app_include_button" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

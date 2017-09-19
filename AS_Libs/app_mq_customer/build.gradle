@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName '0.0.1'
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // -------------------- 以下三个库是必须依赖的 ----------------------------
+    compile 'com.meiqia:meiqiasdk:+@aar'
+    compile 'com.squareup.okhttp3:okhttp:+'
+    // -------------------- 以上三个库是必须依赖的 ----------------------------
+    // 目前支持常见的 4 种图片加载库，必须在下面四个图片加载库中选择一个添加依赖
+    compile 'com.nostra13.universalimageloader:universal-image-loader:+'
+    //    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //    compile 'com.squareup.picasso:picasso:2.5.2'
+    //    compile 'org.xutils:xutils:3.3.36'
+    compile project(':app_core')
+}

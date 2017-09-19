@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5px">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_img"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:actualImageScaleType="fitCenter"
+            app:fadeDuration="300"
+            app:layout_auto_baseheight="width"
+            app:placeholderImageScaleType="fitCenter"
+            app:roundAsCircle="false"
+            app:roundedCornerRadius="0dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运输"
+            android:textColor="@color/text_color_4"
+            android:textSize="45px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运输"
+            android:textColor="@color/text_color_3"
+            android:textSize="35px"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/v_split"
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="@color/primaryColorOff"
+            android:visibility="gone" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

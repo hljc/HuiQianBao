@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1px"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryColorOff"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="50px"
+                android:paddingTop="50px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:nestedScrollingEnabled="false" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:background="@color/text_color_1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20px">
+
+                <ImageView
+                    android:id="@+id/iv_notice"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_marginLeft="20px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_purse_hot" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:background="@color/content_background" />
+
+                <com.gongwen.marqueen.MarqueeView
+                    android:id="@+id/mv_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:marqueeAnimDuration="2000"
+                    app:marqueeAnimIn="@anim/bottom_in"
+                    app:marqueeAnimOut="@anim/top_out"
+                    app:marqueeInterval="5000" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1px"
+                android:layout_marginTop="30px"
+                android:background="@color/text_color_1"
+                android:padding="30px"
+                android:text="金融商务"
+                android:textColor="@color/text_color_4"
+                android:textSize="50px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1px"
+                android:nestedScrollingEnabled="false" />
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="350px"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="30px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1px"
+                android:background="@color/text_color_1"
+                android:padding="30px"
+                android:text="便民服务"
+                android:textColor="@color/text_color_4"
+                android:textSize="50px" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_function"
+                android:layout_width="match_parent"
+                android:layout_height="500px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="350px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/item_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20px">
+
+        <ImageView
+            android:id="@+id/iv_notice"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_xiaoxi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:textColor="@color/primaryColorOff"
+            android:textSize="45px" />
+
+        <com.gongwen.marqueen.MarqueeView
+            android:id="@+id/mv_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:marqueeAnimDuration="2000"
+            app:marqueeAnimIn="@anim/bottom_in"
+            app:marqueeAnimOut="@anim/top_out"
+            app:marqueeInterval="5000" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ddd" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10px"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_background" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_function"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_background"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_vp_1"
+                android:layout_width="30px"
+                android:layout_height="20px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_vp_on" />
+
+            <ImageView
+                android:id="@+id/iv_vp_2"
+                android:layout_width="30px"
+                android:layout_height="20px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_vp_off" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

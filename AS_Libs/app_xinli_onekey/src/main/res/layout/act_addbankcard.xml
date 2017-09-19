@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_1"
+        android:orientation="vertical"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20px"
+            android:text="基本信息"
+            android:textColor="@color/text_color_3"
+            android:textSize="45px"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/icd_bankNum"
+            layout="@layout/app_include_input" />
+
+        <include
+            android:id="@+id/icd_bankMobile"
+            layout="@layout/app_include_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20px"
+            android:text="信用卡信息(信用卡必填，非信用卡勿填)"
+            android:textColor="@color/text_color_3"
+            android:textSize="45px"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/icd_creditCardSafeCode"
+            layout="@layout/app_include_input" />
+
+        <include
+            android:id="@+id/icd_creditCardExpireTime"
+            layout="@layout/app_include_input" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30px"
+            android:paddingTop="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择类型(请保证各类型至少一张)"
+                android:textColor="@color/text_color_3"
+                android:textSize="45px"
+                android:textStyle="bold" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_rechargeCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="30px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_rechargeCard"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/app_radios_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="充值卡(用于快捷收款、购买产品选择；建议信用卡)"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="40px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_withdrawalCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="30px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_withdrawalsCard"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/app_radios_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:text="提现卡(用于余额提现，提现至默认卡；建议储蓄卡)"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="40px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <include
+            android:id="@+id/icd_commit"
+            layout="@layout/app_include_button" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

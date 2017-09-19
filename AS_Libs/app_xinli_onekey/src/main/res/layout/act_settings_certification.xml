@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/content_background"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="1px"
+                android:background="@color/item_background"
+                android:orientation="vertical"
+                android:padding="30px">
+
+                <include
+                    android:id="@+id/icd_bankUserName"
+                    layout="@layout/app_include_input" />
+
+                <include
+                    android:id="@+id/icd_bankIdentify"
+                    layout="@layout/app_include_input" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background"
+                android:gravity="center"
+                android:paddingTop="40px"
+                android:text="请拍摄如下照片用于认证,可点击放大查看示例"
+                android:textColor="@color/text_color_2"
+                android:textSize="40px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background"
+                android:gravity="center"
+                android:paddingTop="10px"
+                android:text="（上传图片占用较大流量，建议使用WIFI）"
+                android:textColor="@color/text_color_2"
+                android:textSize="40px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background"
+                android:orientation="horizontal"
+                android:padding="20px">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/bg_certification_foreground" />
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/bg_certification_background" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/bg_certification_hold" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background">
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/bg_certification_arrow" />
+            </RelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="20px">
+
+                <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/sdv_certification1"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@mipmap/bg_upload1"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false" />
+
+                <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/sdv_certification2"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@mipmap/bg_upload2"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false" />
+
+                <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/sdv_certification3"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@mipmap/bg_upload3"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/text_color_1"
+                android:orientation="vertical"
+                android:paddingBottom="40px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="●请保证您的年龄符合18-55周岁"
+                    android:textColor="@color/primaryColorOff"
+                    android:textSize="35px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="●必须上传身份证、银行卡的正反面照片"
+                    android:textColor="@color/primaryColorOff"
+                    android:textSize="35px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="●手持证件照片需拍到持有人五官,请勿佩戴眼镜、帽子等遮罩物"
+                    android:textColor="@color/primaryColorOff"
+                    android:textSize="35px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="10px"
+                    android:text="●未达到示例标准、照片不清晰、经过编辑处理等非正常拍摄都不予通过"
+                    android:textColor="@color/primaryColorOff"
+                    android:textSize="35px" />
+
+                <include
+                    android:id="@+id/icd_commit"
+                    layout="@layout/app_include_button" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

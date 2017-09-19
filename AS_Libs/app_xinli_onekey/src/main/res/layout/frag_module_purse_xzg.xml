@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.ceq.app_core.view.View_XRefreshLayout
+        android:id="@+id/xrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:background="@color/item_background"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_mainFunction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="450px"
+                    android:layout_marginBottom="1px"
+                    android:layout_marginTop="1px" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1"
+                    android:background="@color/item_background"
+                    android:gravity="center_vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_baseDataLeft"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_baseDataNameLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="今日奖励"
+                            android:textColor="@color/text_color_4"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:id="@+id/tv_baseDataValueLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/primaryColorOff"
+                            android:textSize="60px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_baseDataMiddle"
+                        android:layout_width="150px"
+                        android:layout_height="150px"
+                        android:padding="10px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/app_logo" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_baseDataRight"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_baseDataNameRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="历史奖励"
+                            android:textColor="@color/text_color_4"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:id="@+id/tv_baseDataValueRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/primaryColorOff"
+                            android:textSize="60px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@color/text_color_1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="20px">
+
+                    <ImageView
+                        android:id="@+id/iv_notice"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_marginLeft="20px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_purse_hot" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:background="@color/content_background" />
+
+                    <com.gongwen.marqueen.MarqueeView
+                        android:id="@+id/mv_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:marqueeAnimDuration="2000"
+                        app:marqueeAnimIn="@anim/bottom_in"
+                        app:marqueeAnimOut="@anim/top_out"
+                        app:marqueeInterval="5000" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_function"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginTop="10px"
+                android:layout_weight="4" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_background"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_vp_1"
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_vp_on" />
+
+                <ImageView
+                    android:id="@+id/iv_vp_2"
+                    android:layout_width="30px"
+                    android:layout_height="20px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_vp_off" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.ceq.app_core.view.View_XRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

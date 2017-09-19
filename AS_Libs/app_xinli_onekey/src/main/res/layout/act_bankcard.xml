@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.ceq.app_core.view.View_XRefreshLayout
+        android:id="@+id/xrv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bankCardList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.ceq.app_core.view.View_XRefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:+'
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.huxq17.xrefreshview:xrefreshview:+'
+    compile 'com.blankj:utilcode:+'
+    compile 'com.alibaba:fastjson:+'
+    compile 'com.facebook.fresco:fresco:+'
+    compile 'com.android.support:multidex:+'
+    compile 'org.greenrobot:greendao:+'
+    compile 'org.greenrobot:greendao-generator:+'
+    compile 'net.zetetic:android-database-sqlcipher:+'
+    compile 'com.lzy.net:okgo:+'
+    compile 'com.lzy.net:okserver:+'
+    compile 'com.zhy:flowlayout-lib:+'
+    compile 'com.github.lzyzsd:circleprogress:+'
+    compile 'com.yanzhenjie:permission:+'
+    compile 'com.gongwen:marqueelibrary:+'
+    compile 'me.codeboy.android:align-text-view:+'
+    compile 'com.zhy:autolayout:+'
+    //加载动画
+    compile 'com.wang.avi:library:+'
+    //FlycoTabLayout
+/*    compile 'com.nineoldandroids:library:+'
+    compile 'com.flyco.roundview:FlycoRoundView_Lib:+@aar'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:+@aar'*/
+    compile 'com.daimajia.swipelayout:library:+@aar'
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}

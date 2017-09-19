@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_1"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30px">
+
+        <include
+            android:id="@+id/icd_mobile"
+            layout="@layout/app_include_input" />
+
+        <include
+            android:id="@+id/icd_password"
+            layout="@layout/app_include_input" />
+
+        <include
+            android:id="@+id/icd_password2"
+            layout="@layout/app_include_input" />
+
+        <include
+            android:id="@+id/icd_payPassword"
+            layout="@layout/app_include_input" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <include
+                    android:id="@+id/icd_identifyCode"
+                    layout="@layout/app_include_input" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_getIdentify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="文字"
+                android:textColor="@color/text_color_3"
+                android:textSize="50px"
+                android:textStyle="bold" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <include
+            android:id="@+id/icd_refereeMobile"
+            layout="@layout/app_include_input" />
+
+        <include
+            android:id="@+id/icd_register"
+            layout="@layout/app_include_button" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

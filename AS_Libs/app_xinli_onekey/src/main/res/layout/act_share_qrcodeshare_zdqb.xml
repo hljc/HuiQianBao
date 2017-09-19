@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/content_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/icd_title"
+            layout="@layout/app_include_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_shareBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/item_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/icd_user"
+                layout="@layout/app_item_rv_switch_or_item" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@color/content_background" />
+
+            <TextView
+                android:id="@+id/tv_titleShare"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="30px"
+                android:text=""
+                android:textColor="@color/text_color_3"
+                android:textSize="50px" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="800px"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_qrcode"
+                    android:layout_width="700px"
+                    fresco:layout_auto_basewidth="height"
+                    android:layout_height="700px"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="0"
+                    fresco:failureImageScaleType="fitCenter"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:progressBarAutoRotateInterval="5000"
+                    fresco:progressBarImage="@mipmap/sdv_load"
+                    fresco:progressBarImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false"
+                    fresco:roundedCornerRadius="0dp" />
+
+                <ImageView
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    fresco:layout_auto_basewidth="height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/app_dialog_white_corner"
+                    android:padding="10px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/app_logo" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="微信改变社交方式，淘宝改变购物方式；"
+                    android:textColor="@color/primaryColorOff"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_remind3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/primaryColorOff"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:layout_width="800px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50px"
+                    android:text="支付、购物、信用卡、贷款、便民......,互联网+分享经济时代，别人的手机是您的印钞机。"
+                    android:textColor="@color/text_color_3"
+                    android:textSize="40px" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50px"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/app_bg_corner_button4"
+                        android:gravity="center"
+                        android:paddingBottom="30px"
+                        android:paddingLeft="100px"
+                        android:paddingRight="100px"
+                        android:paddingTop="30px">
+
+                        <ImageView
+                            android:layout_width="55px"
+                            android:layout_height="55px"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/icon_share_phone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="存至手机"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="55px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50px"
+                        android:background="@drawable/app_bg_corner_button2"
+                        android:gravity="center"
+                        android:paddingBottom="30px"
+                        android:paddingLeft="100px"
+                        android:paddingRight="100px"
+                        android:paddingTop="30px">
+
+                        <ImageView
+                            android:layout_width="55px"
+                            android:layout_height="55px"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/icon_share_share" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="一键分享"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="55px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="50px"
+                android:background="@drawable/app_dialog_white_corner"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="40px">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:text="请输入收款金额"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="40px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="@color/text_color_4"
+                        android:textSize="80px" />
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/text_color_1"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/text_color_4"
+                        android:textColorHint="@color/text_color_2"
+                        android:textSize="80px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="1px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb1"
+                    style="@style/tv_keyboard"
+                    android:text="1" />
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb2"
+                    style="@style/tv_keyboard"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:text="2" />
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb3"
+                    style="@style/tv_keyboard"
+                    android:text="3" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="1px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb4"
+                    style="@style/tv_keyboard"
+                    android:text="4" />
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb5"
+                    style="@style/tv_keyboard"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:text="5" />
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb6"
+                    style="@style/tv_keyboard"
+                    android:text="6" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="1px"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb7"
+                    style="@style/tv_keyboard"
+                    android:text="7" />
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb8"
+                    style="@style/tv_keyboard"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:text="8" />
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb9"
+                    style="@style/tv_keyboard"
+                    android:text="9" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb_point"
+                    style="@style/tv_keyboard"
+                    android:text="." />
+
+                <com.ceq.app.main.view.KeyboardTextView
+                    android:id="@+id/tv_kb0"
+                    style="@style/tv_keyboard"
+                    android:layout_marginLeft="1px"
+                    android:layout_marginRight="1px"
+                    android:text="0" />
+
+                <com.ceq.app.main.view.KeyboardLinearLayout
+                    android:id="@+id/ll_kb_del"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/kb_del" />
+                </com.ceq.app.main.view.KeyboardLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_collection_scan"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_collection_scan_off" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#eee" />
+
+            <ImageView
+                android:id="@+id/iv_collection_shortcut"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_collection_shortcut_off" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

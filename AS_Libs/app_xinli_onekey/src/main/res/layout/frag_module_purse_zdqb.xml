@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.ceq.app_core.view.View_XRefreshLayout
+        android:id="@+id/xrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.andview.refreshview.XScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zhy.autolayout.AutoLinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_mainFunction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primaryColorOff"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="50px"
+                    android:paddingTop="50px" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:nestedScrollingEnabled="false" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:background="@color/text_color_1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="20px">
+
+                    <ImageView
+                        android:id="@+id/iv_notice"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_marginLeft="20px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_purse_hot" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:background="@color/content_background" />
+
+                    <com.gongwen.marqueen.MarqueeView
+                        android:id="@+id/mv_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:marqueeAnimDuration="2000"
+                        app:marqueeAnimIn="@anim/bottom_in"
+                        app:marqueeAnimOut="@anim/top_out"
+                        app:marqueeInterval="5000" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1px"
+                    android:padding="30px"
+                    android:background="@color/text_color_1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_secondaryFunctionTitle"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_marginRight="10px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/app_logo" />
+
+                    <TextView
+                        android:id="@+id/tv_secondaryFunctionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="金融电商"
+                        android:textColor="@color/text_color_4"
+                        android:textSize="50px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_secondaryFunction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:nestedScrollingEnabled="false" />
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="350px"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1px"
+                    android:padding="30px"
+                    android:background="@color/text_color_1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_vpFunctionTitle"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_marginRight="10px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/app_logo" />
+
+                    <TextView
+                        android:id="@+id/tv_vpFunctionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="便民服务"
+                        android:textColor="@color/text_color_4"
+                        android:textSize="50px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+                <com.ceq.app.main.view.MyViewPager
+                    android:id="@+id/vp_function"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/item_background"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_vp_1"
+                        android:layout_width="30px"
+                        android:layout_height="20px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_vp_on" />
+
+                    <ImageView
+                        android:id="@+id/iv_vp_2"
+                        android:layout_width="30px"
+                        android:layout_height="20px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_vp_off" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.andview.refreshview.XScrollView>
+    </com.ceq.app_core.view.View_XRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

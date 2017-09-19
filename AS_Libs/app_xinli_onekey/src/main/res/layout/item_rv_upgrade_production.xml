@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/item_background"
+        android:orientation="vertical"
+        android:padding="20px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rl_bg"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_img"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:scaleType="fitCenter"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:fadeDuration="0"
+                fresco:failureImage="@mipmap/app_load_error"
+                fresco:failureImageScaleType="fitCenter"
+                fresco:placeholderImage="@mipmap/app_default_image"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="false"
+                fresco:roundedCornerRadius="0dp" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_left"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="声音"
+                    android:textColor="#000"
+                    android:textSize="45px" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15px"
+                    android:gravity="top">
+
+                    <ImageView
+                        android:layout_width="45px"
+                        android:layout_height="45px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_upgrade_flag" />
+
+                    <TextView
+                        android:id="@+id/tv_subName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:hint="暂无升级说明"
+                        android:textColor="@color/text_color_3"
+                        android:textColorHint="@color/text_color_2"
+                        android:textSize="40px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:gravity="top">
+
+                    <ImageView
+                        android:layout_width="45px"
+                        android:layout_height="45px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_upgrade_flag" />
+
+                    <TextView
+                        android:id="@+id/tv_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:hint="暂无收益说明"
+                        android:textColor="@color/text_color_3"
+                        android:textColorHint="@color/text_color_2"
+                        android:textSize="40px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:paddingBottom="15px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:paddingTop="15px"
+                android:text="升级"
+                android:textColor="@color/text_color_1"
+                android:textSize="45px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

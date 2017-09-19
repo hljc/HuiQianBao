@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/item_background"
+        android:gravity="center">
+
+        <com.facebook.drawee.view.SimpleDraweeView xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sdv_img"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            fresco:actualImageScaleType="fitCenter"
+            fresco:fadeDuration="0"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="false"
+            fresco:roundedCornerRadius="0dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运输"
+            android:textColor="@color/text_color_4"
+            android:textSize="40px"
+            android:visibility="gone" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:id="@+id/v_split"
+        android:layout_width="1px"
+        android:layout_height="match_parent" />
+</com.zhy.autolayout.AutoLinearLayout>

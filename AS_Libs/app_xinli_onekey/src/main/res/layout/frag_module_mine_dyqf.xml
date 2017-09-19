@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.ceq.app_core.view.View_XRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/xrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_user"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:background="@color/primaryColorOff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_header"
+                    android:layout_width="210px"
+                    android:layout_height="210px"
+                    android:scaleType="fitCenter"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="0"
+                    fresco:failureImage="@mipmap/app_load_error"
+                    fresco:failureImageScaleType="fitCenter"
+                    fresco:placeholderImage="@mipmap/app_default_head"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:roundAsCircle="true"
+                    fresco:roundedCornerRadius="0dp"
+                    fresco:roundingBorderColor="#50ffffff"
+                    fresco:roundingBorderWidth="2dp" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="15px"
+                    android:textColor="@color/text_color_1"
+                    android:hint="未获取到姓名"
+                    android:textColorHint="@color/text_color_1"
+                    android:textSize="45px" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_certification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10px"
+                    android:paddingLeft="35px"
+                    android:paddingRight="35px"
+                    android:paddingTop="10px">
+
+                    <TextView
+                        android:id="@+id/tv_certification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="未实名"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="35px" />
+
+                    <ImageView
+                        android:id="@+id/iv_forward"
+                        android:layout_width="35px"
+                        android:layout_height="35px"
+                        android:layout_marginLeft="5px"
+                        android:src="@mipmap/icon_arrow_right" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/primaryColorOff" />
+                </RelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10px"
+                android:layout_weight="1">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/primaryColorOff" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_role_grade_dyqf"
+                    android:paddingBottom="15px"
+                    android:paddingLeft="80px"
+                    android:paddingRight="80px"
+                    android:paddingTop="15px"
+                    android:text="普通用户"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="40px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_mainFunction"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:background="@color/text_color_1" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="40px">
+
+                <ImageView
+                    android:id="@+id/iv_hotLine"
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_aboutus_hotline" />
+
+                <TextView
+                    android:id="@+id/tv_customServiceMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="客服热线"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="40px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.ceq.app_core.view.View_XRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

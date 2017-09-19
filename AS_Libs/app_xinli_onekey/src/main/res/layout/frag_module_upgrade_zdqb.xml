@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="350px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_productions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginTop="30px"
+            android:padding="30px">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_proxy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_weight="1"
+                android:background="@drawable/app_dialog_white_corner"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="50px">
+
+                <TextView
+                    android:id="@+id/tv_production1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="代理商"
+                    android:textColor="@color/text_color_4"
+                    android:textSize="50px" />
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginTop="10px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_upgrade_service" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:background="@drawable/app_dialog_white_corner"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="50px">
+
+                <TextView
+                    android:id="@+id/tv_production2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务商"
+                    android:textColor="@color/text_color_4"
+                    android:textSize="50px" />
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_marginTop="10px"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_upgrade_proxy" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

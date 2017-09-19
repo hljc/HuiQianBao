@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_background"
+        android:paddingBottom="36px"
+        android:paddingTop="36px">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:padding="15px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_channelcancel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择充值卡"
+            android:textColor="@color/title_fontColor"
+            android:textSize="50px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_color_3" />
+
+    <com.ceq.app_core.view.View_XRefreshLayout
+        android:id="@+id/xrv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/content_background">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.ceq.app_core.view.View_XRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

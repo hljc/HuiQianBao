@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px"
+    android:layout_marginBottom="20px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_bg_corner_button1"
+        android:padding="35px"
+        android:textColor="@color/text_color_1"
+        android:text="按钮"
+        android:gravity="center"
+        android:textSize="60px" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>我要代理</title>
+</head>
+<body>
+<script>
+    try{
+        //【0】标题栏（第一个参数标题，第二个参数是否显示返回按钮）
+       android.invokeMethod(0,["标题栏","true"])
+    }catch(e){
+        console.log(e)
+    }
+    function onBack(){
+        //【1】点击触动返回（true直接返回到原生，false浏览器上一页）
+       android.invokeMethod(1,["true"])
+    }
+
+
+    function showDialog(onlyOneButton){
+        //【2】用于显示对话框 （方法名[自己定义]）
+       android.invokeMethod(2,
+            ["内容","确定","onConfirm",
+                onlyOneButton?null:"取消",onlyOneButton?null:"onCancel"])
+    }
+    //对应【2】确认方法名[自己定义]
+    function onConfirm(){
+        //【3】用于提示
+       android.invokeMethod(3,["你点击了确定"])
+    }
+    //对应【2】取消方法名[自己定义]
+    function onCancel(){
+        //【3】用于提示
+       android.invokeMethod(3,["你点击了取消"])
+    }
+
+
+    function userInfo(){
+        //【4】获取用户信息 （第一个参数方法名[自己定义]）
+       android.invokeMethod(4,["obtainUserPurseBaseInfo"])
+    }
+    //对应【4】方法名[自己定义]
+    function obtainUserPurseBaseInfo(userInfo){
+        alert(userInfo)
+    }
+
+
+    var userAgent = navigator.userAgent;
+    var isAndroid = userAgent.indexOf('Android') > -1 || userAgent.indexOf('Adr') > -1; //android终端
+    var isIOS = !!userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if(isAndroid){
+
+    var json=JSON.parse(getQueryStringArgs().json);
+    var id=json.id;
+    var phone=json.phone;
+    var password=json.password;
+    var paypass=json.paypass;
+    var nickName=json.nickName;
+    var fullname=json.fullname;
+    var userHeadUrl=json.userHeadUrl;
+    var sex=json.sex;
+    var userToken=json.userToken;
+    var createTime=json.createTime;
+    var inviteCode=json.inviteCode;
+    var brandId=json.brandId;
+    var grade=json.grade;
+
+    alert(phone)
+    }else if(isIOS){
+    alert("苹果")
+    }
+
+function getQueryStringArgs() {
+    var qs = (location.search.length > 0 ? location.search.substring(1) : ""),
+        args = {},
+        items = qs.length ? qs.split("&") : [],
+        item = null,
+        name = null,
+        value = null,
+        i = 0,
+        len = items.length;
+
+    for (i = 0; i < len; i++) {
+        item = items[i].split("=");
+
+        // decodeURIComponent解码
+        name = decodeURIComponent(item[0]);
+        value = decodeURIComponent(item[1]);
+
+        if (name.length) {
+            args[name] = value;
+        }
+    }
+
+    return args;
+}
+</script>
+<div class="dialog" onclick="showDialog(true)">点击弹出对话框(只显示一个按钮)</div>
+</br>
+<div class="dialog" onclick="showDialog(false)">点击弹出对话框(所有按钮)</div>
+</br>
+<div class="back" onclick="onBack()">点击返回</div>
+</br>
+<div class="userInfo" onclick="userInfo()">获取用户信息</div>
+</br>
+</body>
+</html>

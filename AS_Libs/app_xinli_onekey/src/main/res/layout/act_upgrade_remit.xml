@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30px"
+        android:layout_marginTop="30px"
+        android:background="@color/text_color_1"
+        android:text="公司账户：
+户名：广西赚道网络科技有限公司
+账号：150271561
+开户行：中国民生银行股份有限公司南宁丽原天际支行
+ 
+法人账户：
+户名：陈冠
+账号：6226 2255 0296 9981
+开户行：中国民生银行股份有限公司南宁丽原天际支行
+ 
+温馨提示：
+1、汇款完成后，请及时联系客服人员或拨打400-998-5238完成升级的流程。
+2、如支付过程中遇到困难，请联系客服人员或拨打400-998-5238获得帮助。"
+        android:textColor="@color/text_color_3"
+        android:textSize="40px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

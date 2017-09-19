@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="View_BGAStatusRefreshLayout">
+        <attr name="content_view" format="reference"/>
+        <attr name="no_data_view" format="reference"/>
+        <attr name="no_net_view" format="reference"/>
+        <attr name="net_error_view" format="reference"/>
+        <attr name="loading_view" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="View_LuckyPan">
+        <attr name="pointerSize" format="dimension" />
+    </declare-styleable>
+</resources>

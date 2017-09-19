@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_rakeBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#292f33"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月累计分润"
+                android:textColor="@color/text_color_1"
+                android:textSize="40px" />
+
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/app_arrow_right" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="50px"
+            android:text="￥0.00"
+            android:textColor="@color/text_color_1"
+            android:textSize="100px" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30px"
+            android:paddingTop="30px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#525e66"
+        android:orientation="horizontal"
+        android:padding="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="好友排行:第一位"
+            android:textColor="@color/text_color_1"
+            android:textSize="40px" />
+
+        <ImageView
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/app_arrow_right" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.ceq.app_core.view.View_XRefreshLayout
+        android:id="@+id/xrv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.ceq.app_core.view.View_XRefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

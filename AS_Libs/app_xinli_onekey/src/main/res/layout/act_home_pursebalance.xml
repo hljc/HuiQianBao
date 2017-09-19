@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icd_title"
+        layout="@layout/app_include_title" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_color_1"
+        android:orientation="vertical"
+        android:padding="40px">
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/arc_progress"
+            android:layout_width="600px"
+            android:layout_height="600px"
+            android:layout_gravity="center"
+            custom:arc_bottom_text="今日收入"
+            custom:arc_bottom_text_size="18dp"
+            custom:arc_suffix_text_size="16dp"
+            custom:arc_text_size="40dp"
+            custom:arc_finished_color="@color/text_color_2"
+            custom:arc_suffix_text="元"
+            custom:arc_suffix_text_padding="10dp"
+            custom:arc_text_color="@color/text_color_3"
+            custom:arc_unfinished_color="@color/text_color_2" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:background="@color/text_color_1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="30px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spinner_stroke"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="40px">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总收入"
+                android:textColor="@color/primaryColorOff"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_totalIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:layout_marginTop="20px"
+                android:textColor="@color/btn_press2_on"
+                android:textSize="55px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spinner_stroke"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="40px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月收入"
+                android:textColor="@color/primaryColorOff"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_monthIncome"
+                android:layout_marginTop="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textColor="@color/btn_press2_on"
+                android:textSize="55px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/text_color_1"
+        android:padding="30px">
+
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/tixianyue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可提现金额(元)"
+            android:layout_marginTop="10px"
+            android:textColor="@color/primaryColorOff"
+            android:textSize="45px" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:layout_marginTop="40px"
+            android:textColor="@color/text_color_4"
+            android:textSize="80px" />
+        <include
+            android:id="@+id/icd_withdrawals"
+            layout="@layout/app_include_button" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

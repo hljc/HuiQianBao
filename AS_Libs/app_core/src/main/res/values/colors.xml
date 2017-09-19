@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#abc</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="translucent">#00000000</color>
+    <color name="color_light">#c9cacc</color>
+
+    <color name="title_background">#ffffff</color>
+    <color name="title_fontColor">@color/text_color_4</color>
+    <color name="content_background">#eeeeee</color>
+    <color name="item_background">#ffffff</color>
+    <color name="primaryColorOn">@color/btn_press1_on</color>
+    <color name="primaryColorOff">@color/btn_press1_off</color>
+
+    <color name="text_color_1">#ffffff</color>
+    <color name="text_color_2">#bbbbbb</color>
+    <color name="text_color_3">#888888</color>
+    <color name="text_color_4">#444444</color>
+    <color name="text_color_5">#000000</color>
+
+    <color name="text_color_0">#eeeeee</color>
+
+    <color name="btn_press1_on">#db5d47</color>
+    <color name="btn_press1_off">#f2805c</color>
+    <color name="btn_press2_on">#f4a52a</color>
+    <color name="btn_press2_off">#fdc46a</color>
+    <color name="btn_press3_on">#d47162</color>
+    <color name="btn_press3_off">#e7998d</color>
+    <color name="btn_press4_on">#1a82cc</color>
+    <color name="btn_press4_off">#FF36A5F4</color>
+    <color name="btn_press5_on">#afaeae</color>
+    <color name="btn_press5_off">#eeeeee</color>
+    //takePhotos
+    <color name="multiple_image_select_primaryDark">#141118</color>
+    <color name="multiple_image_select_accent">#141118</color>
+    <color name="multiple_image_select_albumTextBackground">#27282c</color>
+    <color name="multiple_image_select_buttonText">#FFFFFF</color>
+    <color name="multiple_image_select_divider">#B6B6B6</color>
+    <color name="multiple_image_select_imageSelectBackground">#000000</color>
+    <color name="multiple_image_select_primary">#141118</color>
+    <color name="multiple_image_select_primaryLight">#C8E6C9</color>
+    <color name="multiple_image_select_primaryText">#212121</color>
+    <color name="multiple_image_select_secondaryText">#727272</color>
+    <color name="multiple_image_select_toolbarPrimaryText">#FFFFFF</color>
+
+
+</resources>

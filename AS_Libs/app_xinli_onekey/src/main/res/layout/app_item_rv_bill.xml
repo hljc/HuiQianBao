@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:background="@drawable/app_dialog_white_corner"
+        android:paddingBottom="20px"
+        android:paddingTop="20px"
+        fresco:cardCornerRadius="10px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/all_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/all_orderTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10px"
+                    android:paddingTop="20px">
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:id="@+id/iv_order"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/icon_transaction_ordernum" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易单号"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="45px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_orderNum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="10px"
+                        android:lines="1"
+                        android:text="ABCDEFGHIJKLMNOPQRSTUVWXYZAAAAAAAA"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="40px"
+                        android:textStyle="bold" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:background="@color/text_color_0" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sdv_img"
+                    android:layout_width="90px"
+                    android:layout_height="90px"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:scaleType="fitCenter"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:fadeDuration="0"
+                    fresco:failureImage="@mipmap/app_load_error"
+                    fresco:failureImageScaleType="fitCenter"
+                    fresco:placeholderImage="@mipmap/app_default_image"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:roundAsCircle="false"
+                    fresco:roundedCornerRadius="0dp" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20px"
+                    android:paddingBottom="10px"
+                    android:paddingTop="10px">
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="鼓励金"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:text="2017-1-1 17:19"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="40px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginRight="50px">
+
+                    <ImageView
+                        android:id="@+id/iv_status"
+                        android:layout_width="125px"
+                        android:layout_height="85px"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/icon_transaction_status" />
+
+                    <TextView
+                        android:id="@+id/tv_orderStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5px"
+                        android:textSize="40px"
+                        android:text="已结算"
+                        android:textColor="@color/text_color_1" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:layout_marginTop="10px"
+                android:gravity="center">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_transactionMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:lines="1"
+                        android:text="交易金额"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="40px" />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_poundage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:lines="1"
+                        android:text="手续费"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="40px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_realMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textStyle="bold"
+                        android:textColor="@color/btn_press1_off"
+                        android:textSize="45px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:lines="1"
+                        android:text="到账金额"
+                        android:textColor="@color/text_color_3"
+                        android:textSize="40px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <com.zhy.autolayout.AutoLinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/all_rate"
+                        android:layout_width="130px"
+                        android:layout_height="130px"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_auto_basewidth="height">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="费率"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/tv_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.52%"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="35px"
+                            android:textStyle="italic" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v7.widget.CardView>
+</com.zhy.autolayout.AutoRelativeLayout>
